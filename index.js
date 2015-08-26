@@ -5,5 +5,7 @@ var server = require('./server/node_server'),
 var handler = {}
 handler['/start'] = requestHandler.start;
 handler['/'] = requestHandler.start;
+handler['/upload'] = requestHandler.upload;
+
 server.start(route.route, handler);
 
